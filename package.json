@@ -1,0 +1,40 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsx ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf node_modules package-lock.json && npm i",
+    "format": "prettier . -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@sqlfx/sql": "^0.45.0",
+    "@sqlfx/pg": "^0.45.0",
+    "@effect/platform": "^0.46.1",
+    "@effect/platform-node": "^0.44.9",
+    "@effect/schema": "^0.63.0",
+    "effect": "^2.4.0",
+    "effect-http": "^0.55.0",
+    "effect-http-node": "^0.3.0",
+    "effect-log": "^0.30.2",
+    "uuid": "^9.0.1",
+    "date-fns": "^3.3.1",
+    "tsx": "^4.7.1"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "trailingComma": "all",
+    "singleQuote": true
+  }
+}
